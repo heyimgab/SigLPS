@@ -49,6 +49,15 @@
             border: none;
             cursor: pointer;
         }
+        textarea#signatureTextarea {
+            width: 80%;
+            height: 300px;
+            resize: none; 
+            border: 1px solid #ccc; 
+            padding: 10px; 
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+        }
     </style>
 </head>
 <body>
@@ -85,6 +94,7 @@
         
 
         <button type="button" onclick="generateSignature()">Générer la signature</button>
+        <textarea id="signatureTextarea" rows="10" cols="50" readonly></textarea>
     </form>
 
     <div id="signatureResult"></div>
@@ -222,6 +232,9 @@ LORRAINE " data-image-whitelisted="" class="CToWUd" data-bit="iit">
 
 
             document.getElementById("signatureResult").innerHTML = signatureHTML;
+
+            const signatureTextarea = document.getElementById("signatureTextarea");
+            signatureTextarea.value = signatureHTML
         }
 
         // Fonction pour mettre à jour l'adresse en fonction du choix de la clinique
