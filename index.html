@@ -20,20 +20,16 @@
     <title>SigLPS</title>
 </head>
 <body>
-    <div class="background"></div>
-
+    <div class="background"></div> 
     <img id="logoweb" src="https://i.imgur.com/LRuguGU.png" alt="Logo Louis Pasteur Santé" width="250" height="125">
     <h1>SigLPS</h1>
     <form id="emailSignatureForm">
         <label for="nom">Nom :</label>
         <input type="text" id="nom" name="nom" placeholder="Votre nom">
-
         <label for="prenom">Prénom :</label>
         <input type="text" id="prenom" name="prenom" placeholder="Votre prénom">
-
         <label for="poste">Titre :</label>
         <input type="text" id="poste" name="poste" placeholder="Votre titre professionnel">
-
         <!-- Menu déroulant pour sélectionner une clinique -->
         <label for="clinique">Clinique :</label>
         <select id="clinique" name="clinique" onchange="updateAddress()">
@@ -41,12 +37,9 @@
             <option value="Clinique La Ligne Bleue - ">Clinique La Ligne Bleue - EPINAL</option>
             <option value="Clinique Ambroise Paré - ">Clinique Ambroise Paré - THIONVILLE</option>
             <option value="Clinique Jeanne d'Arc - ">Clinique Jeanne d'Arc - LUNEVILLE</option>
-            <!-- Ajoutez d'autres options pour plus de cliniques -->
         </select>
-
         <label for="getEmail">E-mail :</label>
         <input type="email" id="getEmail" name="getEmail" placeholder="Votre adresse e-mail">
-
         <label for="tel">Téléphone :</label>
         <input type="tel" id="tel" name="tel" placeholder="Votre numéro de téléphone">
 
